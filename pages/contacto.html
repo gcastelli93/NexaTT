@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexaGear | Contacto</title>
+    <!-- Google Fonts: Orbitron, Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace a tus estilos CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- 1. HEADER / ENCABEZADO -->
+    <header class="header">
+        <!-- Logo a la izquierda -->
+        <a href="../index.html" class="header-logo">
+            <img src="../assets/img/NexaFooterLogo.svg" alt="Nexa - Logo">
+        </a>
+
+        <!-- Grupo derecho: Navegación + Botón de Carrito -->
+        <div class="header-right">
+            <nav class="header-nav">
+                <a href="../index.html">Inicio</a>
+                <a href="../index.html#productos">Productos</a>
+                <a href="../index.html#resenas">Reseñas</a>
+                <a href="./contacto.html">Contacto</a>
+            </nav>
+            <a href="./carrito.html" class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Carrito
+                <span id="contador-carrito" style="background-color: var(--color-primary); color: white; border-radius: 50%; padding: 0.1rem 0.5rem; font-size: 0.75rem; font-weight: bold; margin-left: 0.25rem;">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL -->
+    <main>
+        <section class="contact-section" id="contacto">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h1 class="section-title">Ponte en Contacto</h1>
+                    <p class="contact-subtitle">¿Tienes dudas sobre algún equipo o necesitas soporte técnico especializado? Escríbenos.</p>
+                </div>
+
+                <!-- Formulario adaptado con Formspree -->
+                <form class="contact-form" action="https://formspree.io/f/mkjgyarp" method="POST">
+                    <div class="form-group">
+                        <label for="email">Tu Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="usuario@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Tu Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre completo">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tu Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Escribe tu consulta aquí..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-submit">
+                        <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 3. FOOTER -->
+    <footer class="footer">
+        <div class="footer-content-wrapper">
+            <div class="footer-container">
+                <!-- Columna 1: Marca y Redes -->
+                <div class="footer-col brand-col">
+                    <a href="../index.html" class="footer-logo">
+                        <img src="../assets/img/NexaFooterLogo.svg" alt="NexaGear - Logo">
+                    </a>
+                    <p class="footer-desc">
+                        Equipamiento y tecnología de alto rendimiento para gamers, creadores y profesionales exigentes.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Navegación -->
+                <div class="footer-col">
+                    <h2 class="footer-title">Navegación</h2>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../index.html#productos">Productos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div class="footer-col">
+                    <h2 class="footer-title">Contacto</h2>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Av. Tecnológica 1450, Piso 4, Of. 402</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+54 (11) 4567-8900</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>soporte@nexagear.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Lun - Vie: 9:00 - 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Legal / Ayuda -->
+                <div class="footer-col">
+                    <h2 class="footer-title">Legal y Ayuda</h2>
+                    <ul class="footer-links">
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Garantías y Devoluciones</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>

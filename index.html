@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexa | Gaming & PC Hardware</title>
+    <!-- Google Fonts: Orbitron, Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 1. HEADER / ENCABEZADO -->
+    <header class="header">
+        <a href="./index.html" class="header-logo">
+            <img src="./assets/img/NexaFooterLogo.svg" alt="Nexa - Logo">
+        </a>
+
+        <div class="header-right">
+            <nav class="header-nav">
+                <a href="./index.html">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#resenas">Reseñas</a>
+                <a href="./pages/contacto.html">Contacto</a>
+            </nav>
+            <a href="./pages/carrito.html" class="btn-cart">
+                <i class="fa-solid fa-cart-shopping"></i> Carrito
+                <span id="contador-carrito" style="background-color: var(--color-primary); color: white; border-radius: 50%; padding: 0.1rem 0.5rem; font-size: 0.75rem; font-weight: bold; margin-left: 0.25rem;">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <img src="./assets/img/herobanner.jpg" alt="Setup gamer de fondo" class="hero-bg-image">
+
+            <div class="hero-content">
+                <h1>Potenciá tu forma de jugar</h1>
+                <p>Encontrá el mejor hardware, periféricos y PCs armadas para gamers exigentes.</p>
+                <a href="#productos" class="btn-primary">Ver Productos</a>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="products-section" id="productos">
+            <div class="products-container">
+                <div class="product-header">
+                    <h2 class="section-title">Conocé nuestros <span>productos destacados</span></h2>
+                    <p class="product-subtitle">Potenciá tu nivel competitivo con el hardware y los periféricos elegidos por los pros.</p>
+                </div>
+
+                <div class="products-grid" id="contenedor-productos">
+                    <!-- Aquí se inyectan los productos con JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- RESEÑAS -->
+        <section class="reviews-section" id="resenas">
+            <div class="reviews-container">
+                <div class="reviews-header">
+                    <h2 class="section-title">Lo que dicen nuestros gamers</h2>
+                    <p class="reviews-subtitle">La opinión de quienes ya elevaron su rendimiento con nuestro equipamiento.</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <!-- Reseña 1 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "El Logitech G PRO X Superlight es una locura, pesa nada y la batería dura días enteros jugando sin parar. Lo compré con envío a CABA y llegó en 24 horas impecable. Excelente atención de la tienda."
+                        </p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Avatar de Sofía M.">
+                            <div>
+                                <p>Sofía Martínez</p>
+                                <span>Creadora de Contenido</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reseña 2 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Buscaba algo bueno sin gastar una fortuna y el G203 Lightsync no decepciona. Las luces RGB se configuran súper fácil con el G Hub y el sensor responde excelente para el precio que tiene. Muy conforme."
+                        </p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Avatar de Lucas G.">
+                            <div>
+                                <p>Lucas Gómez</p>
+                                <span>Jugador de Esports</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reseña 3 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Los Logitech G733 son hiper cómodos, los podés tener puestos horas y ni te pesan en la cabeza. El micrófono se escucha flamante en Discord y la cancelación de ruidos zafa muy bien. ¡Recomendadísimos!"
+                        </p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Avatar de Mateo R.">
+                            <div>
+                                <p>Mateo Ramírez</p>
+                                <span>Gamer Entusiasta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reseña 4 -->
+                    <div class="review-card">
+                        <div class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="review-text">
+                            "Tenía dudas sobre qué combo elegir para arrancar y los chicos me asesoraron re bien por el chat. Originales, caja sellada y garantía oficial en Argentina. Da gusto comprar así."
+                        </p>
+                        <div class="review-author">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Avatar de Valentina S.">
+                            <div>
+                                <p>Valentina Silva</p>
+                                <span>Streamer Profesional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 3. FOOTER -->
+    <footer class="footer">
+        <div class="footer-content-wrapper">
+            <div class="footer-container">
+                <!-- Columna 1: Marca y Redes -->
+                <div class="footer-col brand-col">
+                    <a href="./index.html" class="footer-logo">
+                        <img src="./assets/img/NexaFooterLogo.svg" alt="NexaGear - Logo">
+                    </a>
+                    <p class="footer-desc">
+                        Equipamiento y tecnología de alto rendimiento para gamers, creadores y profesionales exigentes.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Navegación -->
+                <div class="footer-col">
+                    <h2 class="footer-title">Navegación</h2>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto -->
+                <div class="footer-col">
+                    <h2 class="footer-title">Contacto</h2>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Av. Tecnológica 1450, Piso 4, Of. 402</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+54 (11) 4567-8900</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>soporte@nexagear.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Lun - Vie: 9:00 - 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Legal / Ayuda -->
+                <div class="footer-col">
+                    <h2 class="footer-title">Legal y Ayuda</h2>
+                    <ul class="footer-links">
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">Garantías y Devoluciones</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Barra inferior de derechos -->
+            <div class="footer-bottom">
+                <p>2026 Nexa. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
